@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+	http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="EjbHelpPolice">
+	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<non-jta-data-source>java:/BDhelppolice</non-jta-data-source>
+		<class>com.edu.udistrital.entity.CasoAyuda</class>
+		<class>com.edu.udistrital.entity.Perfil</class>
+		<class>com.edu.udistrital.entity.Persona</class>
+		<class>com.edu.udistrital.entity.TipoSolicitud</class>
+		<class>com.edu.udistrital.entity.TipoVehiculo</class>
+		<class>com.edu.udistrital.entity.Ubicacion</class>
+		<class>com.edu.udistrital.entity.Usuario</class>
+		<class>com.edu.udistrital.entity.Vehiculo</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<!-- property name="hibernate.hbm2ddl.auto" value="create-drop" / -->
+			<property name="hibernate.show_sql" value="false" />
+		</properties>
+	</persistence-unit>
+</persistence>
